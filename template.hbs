@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+
+    {{#each components}}
+      <div class="component">
+      <h2>{{name}}</h2>
+            <p>{{description}}</p>
+            <p><a href="{{link}}">Preview</a></p>
+            <p><img src="{{img}}"></p>
+            </div>
+    {{/each}}
+
+</body>
+</html>
